@@ -16,7 +16,6 @@ flake8 = "^3.9.0"
 flake8-expression-complexity = "^0.0.9"
 pep8-naming = "^0.11.1"
 sphinx = "^1.8.5"
-recommonmark = "^0.7.1"
 
 
 [tool.poetry.dev-dependencies]
