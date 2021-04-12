@@ -1,4 +1,4 @@
-from mlserving.webframeworks import WebFramework
+from buzzni.ai.reco.mlserving.webframeworks import WebFramework
 
 
 class WebFrameworkFactory:

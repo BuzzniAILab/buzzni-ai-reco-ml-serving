@@ -1,8 +1,8 @@
 import falcon as f
 
-from mlserving.api import Request
-from mlserving.predictors import RESTPredictor
-from mlserving.predictors.runner import PredictorRunner
+from buzzni.ai.reco.mlserving.api import Request
+from buzzni.ai.reco.mlserving.predictors import RESTPredictor
+from buzzni.ai.reco.mlserving.predictors.runner import PredictorRunner
 
 
 class InferenceResource:

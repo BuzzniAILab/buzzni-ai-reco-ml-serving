@@ -1,6 +1,6 @@
 import falcon as f
 
-from mlserving.api import Response
+from buzzni.ai.reco.mlserving.api import Response
 
 
 def error_handler(handler):

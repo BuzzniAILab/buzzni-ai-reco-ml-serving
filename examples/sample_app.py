@@ -1,6 +1,6 @@
-from mlserving import ServingApp
-from mlserving.api import Request
-from mlserving.predictors import RESTPredictor
+from buzzni.ai.reco.mlserving import ServingApp
+from buzzni.ai.reco.mlserving.api import Request
+from buzzni.ai.reco.mlserving.predictors import RESTPredictor
 
 
 class MyPredictor(RESTPredictor):

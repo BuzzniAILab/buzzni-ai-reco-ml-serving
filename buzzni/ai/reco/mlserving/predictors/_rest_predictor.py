@@ -1,8 +1,8 @@
 from abc import ABC
 
-from mlserving.api import Request
-from mlserving.api.request_validation import RequestValidator
 from ._base import PredictorBase
+from ..api import Request
+from ..api.request_validation import RequestValidator
 
 
 class RESTPredictor(PredictorBase, ABC):

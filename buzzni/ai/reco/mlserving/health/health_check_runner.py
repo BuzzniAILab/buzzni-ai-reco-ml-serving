@@ -1,10 +1,10 @@
 import logging
 from http import HTTPStatus
 
-from mlserving.api import Response
-from mlserving._state import runtime_state
 from .health_handler import HealthHandler
 from .status import Unhealthy
+from .._state import runtime_state
+from ..api import Response
 
 
 def _full_name(health_checker):

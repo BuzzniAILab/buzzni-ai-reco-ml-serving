@@ -34,7 +34,7 @@ class TFServingPrediction:
         self._requests_options = kwargs
 
     def predict(self, request_payload: dict, req):
-        res = requests.post(self.predict_api_url, json=request_payload, **self._requests_options)
+        res = requests.post(self.predict_api_url, data=request_payload, **self._requests_options)
         if res.status_code != 200:
             raise TFServingRequestError(f'Failed calling tf-serving endpoint, code: {res.status_code}, {res.content}')
 

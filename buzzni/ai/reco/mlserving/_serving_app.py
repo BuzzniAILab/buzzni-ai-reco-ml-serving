@@ -5,9 +5,9 @@ from http import HTTPStatus
 from typing import Union
 from wsgiref import simple_server
 
+from ._state import runtime_state
 from .api import Response
-from mlserving.health import DefaultHealthHandler
-from mlserving._state import runtime_state
+from .health import DefaultHealthHandler
 from .webframeworks import WebFramework, WebFrameworkFactory
 
 default_health_handler = DefaultHealthHandler()

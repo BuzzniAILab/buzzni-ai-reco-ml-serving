@@ -1,7 +1,7 @@
 import abc
 from typing import Union
 
-from mlserving.api import Request, Response
+from buzzni.ai.reco.mlserving.api import Request, Response
 
 
 class PredictorBase:

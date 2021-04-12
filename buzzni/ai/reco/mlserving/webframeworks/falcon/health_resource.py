@@ -1,6 +1,6 @@
 from falcon import Request, Response
 
-from mlserving.health import HealthCheckRunner, HealthHandler
+from buzzni.ai.reco.mlserving.health import HealthHandler, HealthCheckRunner
 
 
 class HealthResource:

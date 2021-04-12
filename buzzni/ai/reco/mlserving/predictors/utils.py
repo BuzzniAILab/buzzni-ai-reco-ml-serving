@@ -1,7 +1,7 @@
 import traceback
 from http import HTTPStatus
 
-from mlserving.api import Response
+from buzzni.ai.reco.mlserving.api import Response
 
 
 def error_response(e: Exception):
