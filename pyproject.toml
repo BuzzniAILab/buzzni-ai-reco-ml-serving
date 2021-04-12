@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "buzzni-ai-reco-ml-serving"
-version = "0.3.0"
+version = "0.3.6"
 description = ""
 authors = ["edwin <edwin@buzzni.com>"]
 
@@ -16,6 +16,7 @@ flake8 = "^3.9.0"
 flake8-expression-complexity = "^0.0.9"
 pep8-naming = "^0.11.1"
 validr = "^1.2.1"
+falcon = "^3.0.0"
 
 
 [tool.poetry.dev-dependencies]
