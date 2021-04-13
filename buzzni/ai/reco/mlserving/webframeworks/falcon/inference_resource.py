@@ -13,7 +13,7 @@ class InferenceResource:
         mlserving_req = Request(req.media, req.headers)
 
         response = PredictorRunner.run_inference(self.predictor, mlserving_req)
-        res.body = response.text
+        res.body = response.data
         res.status = response.status_string
 
         return res
