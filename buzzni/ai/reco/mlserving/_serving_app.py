@@ -15,6 +15,7 @@ default_health_handler = DefaultHealthHandler()
 
 class ServingApp(object):
     def __init__(self,
+                 service_name: str,
                  framework: Union[str, WebFramework] = 'falcon',
                  **kwargs):
         """
@@ -26,7 +27,7 @@ class ServingApp(object):
         if isinstance(framework, WebFramework):
             self.web_framework = framework
         else:
-            self.web_framework = WebFrameworkFactory.create(framework)
+            self.web_framework = WebFrameworkFactory.create(framework, service_name)
 
         self.__init_logger()
         self._handle_sigterm(self.logger)

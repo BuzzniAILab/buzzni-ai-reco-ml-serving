@@ -9,10 +9,10 @@ from .. import WebFramework
 
 class FalconFramework(WebFramework):
 
-    def __init__(self):
+    def __init__(self, service_name):
         self._app = falcon.API(middleware=[
             ElasticApmMiddleware(
-                service_name='tvshop-item-internal-gpu',
+                service_name=service_name,
                 server_url='http://apm-server.hsmoaworks.com'
             )
         ])
