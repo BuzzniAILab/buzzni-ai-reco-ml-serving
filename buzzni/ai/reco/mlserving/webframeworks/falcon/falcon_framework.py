@@ -1,4 +1,5 @@
 import falcon
+from falcon_elastic_apm import ElasticApmMiddleware
 
 from .error_handler import error_handler
 from .health_resource import HealthResource
@@ -9,7 +10,12 @@ from .. import WebFramework
 class FalconFramework(WebFramework):
 
     def __init__(self):
-        self._app = falcon.API()
+        self._app = falcon.API(middleware=[
+            ElasticApmMiddleware(
+                service_name='tvshop-item-internal-gpu',
+                server_url='http://apm-server.hsmoaworks.com'
+            )
+        ])
 
     @property
     def app(self):
